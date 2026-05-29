@@ -1,0 +1,134 @@
+.hero{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    min-height: 100vh;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    text-align: center;
+}
+
+.container h1{
+    font-size: 70px;
+    margin-bottom: 10px;
+}
+
+.container h2{
+
+    font-size: 28px;
+
+    font-weight: 400;
+
+    color: #cbd5e1;
+
+    margin-bottom: 15px;
+}
+.container p{
+
+    font-size: 16px;
+
+    font-weight: 300;
+
+    color: #94a3b8;
+
+    max-width: 600px;
+
+    line-height: 1.6;
+
+    margin-bottom: 30px;
+}
+
+.buttons{
+    display: flex;
+    gap: 20px;
+}
+
+.buttons a{
+    padding: 15px 30px;
+
+    border-radius: 10px;
+
+    text-decoration: none;
+
+    color: white;
+}
+
+.container span{
+
+    background: linear-gradient(
+        90deg,
+        #3b82f6,
+        #8b5cf6,
+        #ec4899
+    );
+
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.buttons a{
+
+    padding: 9px 20px;
+
+    font-size: 13px;
+}
+
+.buttons a:first-child{
+
+    background: linear-gradient(
+        90deg,
+        #2563eb,
+        #9333ea
+    );
+
+    color: white;
+}
+
+.buttons a:last-child{
+
+    border: 1px solid #8b5cf6;
+
+    color: white;
+
+    background: transparent;
+}
+
+.social-links {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+
+    gap: 25px;
+
+    margin-top: 40px;
+    margin-bottom: 50px;
+}
+
+.social-links img {
+    width: 28px;
+    transition: 0.3s;
+}
+
+.social-links img:hover {
+    transform: translateY(-4px);
+}
+
+.social-links a:hover {
+    transform: scale(1.1);
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.scroll-down {
+    margin-top: 60px;
+}
+
