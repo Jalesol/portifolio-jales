@@ -20,3 +20,66 @@
  #sobre h1 {
     font-size: 50px;
  }
+
+.scroll-down img{
+    width: 50px;
+    height: 50px;
+}
+
+#sobre p {
+
+    font-size: 18px;
+
+    text-align: center;
+
+    max-width: 700px;
+
+    margin: 0 auto;
+}
+
+
+
+.card h3 {
+    color: rgba(128, 128, 128, 0.445);
+    font-size: 20px;
+}
+
+.sobre-cards{
+    display: flex;
+
+    justify-content: center;
+
+    gap: 70px;
+
+    margin-top: 60px;
+
+    flex-wrap: wrap;
+}
+
+.card{
+    width: 300px;
+
+    padding: 30px;
+
+    border-radius: 20px;
+
+    text-align: center;
+
+    transition: 0.3s;
+
+    border: 1px solid transparent;
+
+    background:
+        linear-gradient(#111827, #111827) padding-box,
+        linear-gradient(
+            90deg,
+            #2563eb,
+            #9333ea
+        ) border-box;
+}
+
+.card img{
+    width: 45px;
+
+    margin-bottom: 20px;
+}
