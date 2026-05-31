@@ -1,0 +1,34 @@
+#projetos {
+    text-align: center;
+    margin-top: 200px;
+}
+
+#projetos span {
+
+         background: linear-gradient(
+        90deg,
+        #3b82f6,
+        #8b5cf6,
+        #ec4899
+    );
+    
+
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+
+#projetos h1 {
+    margin-bottom: 10px;
+    font-size: 50px;
+}
+
+#projetos p {
+   font-size: 18px;
+
+    text-align: center;
+
+    max-width: 700px;
+
+    margin: 0 auto;
+}

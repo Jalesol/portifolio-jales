@@ -1,10 +1,26 @@
 nav{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+
     display: flex;
     justify-content: space-between;
     align-items: center;
 
-    padding: 20px 60px;
+    padding: 20px 10%;
+
+    background: rgba(17, 24, 39, 0.95);
+
+    backdrop-filter: blur(10px);
+
+    z-index: 1000;
 }
+#inicio{
+    padding-top: 100px;
+}
+
+
 
 nav ul{
     display: flex;
@@ -19,4 +35,18 @@ nav ul li a {
 
 nav ul li a:hover {
     color: rgb(207, 200, 200);
+}
+
+span {
+      background: linear-gradient(
+        90deg,
+        #2563eb,
+        #9333ea
+    );
+
+    background-clip: text;
+    -webkit-background-clip: text;
+
+    color: transparent;
+    -webkit-text-fill-color: transparent;
 }

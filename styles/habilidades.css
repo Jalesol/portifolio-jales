@@ -5,9 +5,14 @@
         #8b5cf6,
         #ec4899
     );
+    
 
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+}
+
+#habilidades{
+    margin-top: 250px;
 }
 
 #habilidades p {
@@ -84,4 +89,51 @@
 
 .node {
     width: 70%;
+}
+
+.git {
+    width: 90%;
+}
+
+.Python {
+    width: 60%;
+}
+
+.PostgreSQL {
+    width: 50%;
+}
+
+.MongoDB {
+    width: 30%;
+}
+
+.Next {
+    width: 70%;
+}
+
+.docker {
+    width: 30%;
+}
+
+.code {
+    width: 95%;
+}
+
+.figma {
+    width: 80%;
+}
+
+.skills{
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+    margin-top: 40px;
+}
+
+.skill{
+    width: 350px;
+    background: #161b22;
+    padding: 25px;
+    border-radius: 15px;
 }
