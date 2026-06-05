@@ -38,15 +38,13 @@ nav ul li a:hover {
 }
 
 span {
-      background: linear-gradient(
-        90deg,
-        #2563eb,
-        #9333ea
-    );
+    background: linear-gradient(
+    90deg,
+    #2563eb,
+    #1d4ed8,
+    #06b6d4
+);
 
-    background-clip: text;
-    -webkit-background-clip: text;
-
-    color: transparent;
-    -webkit-text-fill-color: transparent;
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
 }
