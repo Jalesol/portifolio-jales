@@ -1,0 +1,222 @@
+/* ===================================
+   SEÇÃO CONTATO
+=================================== */
+
+#contato {
+    margin-top: 80px;
+    padding: 40px 20px;
+    color: white;
+}
+
+#contato h1 {
+    text-align: center;
+    font-size: 50px;
+    margin-bottom: 10px;
+}
+
+#contato h1 span {
+    color: #3b82f6;
+}
+
+#contato > p {
+    text-align: center;
+    font-size: 20px;
+    color: #9ca3af;
+    margin-bottom: 60px;
+}
+
+/* ===================================
+   CONTAINER
+=================================== */
+
+.contato-conteudo {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.contato-principal {
+    display: grid;
+    grid-template-columns: 1fr 1.2fr;
+    gap: 50px;
+    align-items: start;
+}
+
+/* ===================================
+   LADO ESQUERDO
+=================================== */
+
+.contato-info h3 {
+    font-size: 36px;
+    margin-bottom: 15px;
+}
+
+.contato-info > p {
+    color: #94a3b8;
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 30px;
+}
+
+.contato-detalhes {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.contato-item {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+
+    background: #0b1220;
+    border: 1px solid #1f2937;
+
+    border-radius: 16px;
+
+    padding: 22px;
+
+    transition: .3s;
+}
+
+.contato-item:hover {
+    transform: translateY(-5px);
+    border-color: #3b82f6;
+}
+
+.icon {
+    width: 50px;
+    height: 50px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    border-radius: 12px;
+
+    background: linear-gradient(
+        90deg,
+        #3b82f6,
+        #8b5cf6
+    );
+
+    font-size: 22px;
+}
+
+.contato-item h4 {
+    font-size: 20px;
+    margin-bottom: 5px;
+}
+
+.contato-item p {
+    color: #94a3b8;
+    font-size: 15px;
+}
+
+/* ===================================
+   FORMULÁRIO
+=================================== */
+
+.contato-form-coluna {
+    background: #0b1220;
+
+    border: 1px solid #1f2937;
+
+    border-radius: 16px;
+
+    padding: 35px;
+}
+
+.contato-form-coluna form {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+.contato-form-coluna input,
+.contato-form-coluna textarea {
+    width: 100%;
+
+    background: #111827;
+
+    border: 1px solid #334155;
+
+    border-radius: 10px;
+
+    color: white;
+
+    font-size: 16px;
+
+    padding: 15px;
+
+    box-sizing: border-box;
+}
+
+.contato-form-coluna input {
+    height: 55px;
+}
+
+.contato-form-coluna textarea {
+    min-height: 220px;
+    resize: vertical;
+}
+
+.contato-form-coluna input:focus,
+.contato-form-coluna textarea:focus {
+    outline: none;
+    border-color: #3b82f6;
+}
+
+/* ===================================
+   BOTÃO
+=================================== */
+
+.btn-enviar {
+    height: 55px;
+
+    border: none;
+
+    border-radius: 10px;
+
+    background: linear-gradient(
+        90deg,
+        #3b82f6,
+        #8b5cf6
+    );
+
+    color: white;
+
+    font-size: 16px;
+
+    font-weight: 600;
+
+    cursor: pointer;
+
+    transition: .3s;
+}
+
+.btn-enviar:hover {
+    transform: translateY(-2px);
+}
+
+/* ===================================
+   RESPONSIVO
+=================================== */
+
+@media (max-width: 900px) {
+
+    .contato-principal {
+        grid-template-columns: 1fr;
+    }
+
+    #contato h1 {
+        font-size: 40px;
+    }
+
+    .contato-info h3 {
+        text-align: center;
+    }
+
+    .contato-info > p {
+        text-align: center;
+    }
+}
