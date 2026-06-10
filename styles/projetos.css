@@ -1,23 +1,24 @@
+
 /* =========================
    SEÇÃO PROJETOS
 ========================= */
 #projetos {
     margin-top: 80px;
     text-align: center;
-    padding: 20px;
+    padding: 60px 20px;
 }
 
 #projetos h1 {
-    font-size: 50px;
+    font-size: 48px;
     margin-bottom: 10px;
 }
 
 #projetos p {
     font-size: 18px;
     color: #9ca3af;
-    margin-bottom: 40px;
+    margin-bottom: 50px;
     padding: 0 10px;
-    line-height: 1.5;
+    line-height: 1.6;
 }
 
 /* =========================
@@ -25,9 +26,9 @@
 ========================= */
 .projetos-container {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-    gap: 30px;
-    padding: 40px 20px;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 25px;
+    padding: 20px;
     justify-items: center;
     align-items: stretch;
 }
@@ -42,16 +43,16 @@
     overflow: hidden;
 
     width: 100%;
-    max-width: 350px;
+    max-width: 360px;
 
     display: flex;
     flex-direction: column;
 
-    transition: 0.3s ease;
+    transition: all 0.25s ease;
 }
 
 .projetos-card:hover {
-    transform: translateY(-5px);
+    transform: translateY(-6px);
     border-color: #3b82f6;
 }
 
@@ -65,17 +66,18 @@
 /* TÍTULO */
 .projetos-card h3 {
     font-size: 18px;
-    margin: 12px 16px 6px;
+    margin: 14px 16px 6px;
     text-align: left;
+    color: #fff;
 }
 
 /* DESCRIÇÃO */
 .projetos-card p {
-    font-size: 13px;
+    font-size: 13.5px;
     color: #94a3b8;
     margin: 0 16px 12px;
     text-align: left;
-    line-height: 1.4;
+    line-height: 1.5;
 }
 
 /* TAGS */
@@ -83,7 +85,7 @@
     display: flex;
     flex-wrap: wrap;
     gap: 8px;
-    margin: 0 16px 15px 16px;
+    margin: 0 16px 15px;
 }
 
 /* BOTÕES */
@@ -103,12 +105,17 @@
     text-align: center;
     text-decoration: none;
     cursor: pointer;
+    transition: 0.2s ease;
+}
+
+.btn:hover {
+    transform: scale(1.03);
 }
 
 /* BOTÃO CÓDIGO */
 .btn-code {
-    background: white;
-    color: black;
+    background: #ffffff;
+    color: #000;
 }
 
 /* BOTÃO DEMO */
@@ -118,29 +125,35 @@
 }
 
 /* =========================
-   RESPONSIVO (CELULAR)
+   RESPONSIVO MOBILE
 ========================= */
 @media (max-width: 768px) {
 
+    #projetos {
+        padding: 40px 15px;
+    }
+
     #projetos h1 {
-        font-size: 32px;
+        font-size: 30px;
     }
 
     #projetos p {
         font-size: 14px;
+        margin-bottom: 30px;
     }
 
     .projetos-container {
         grid-template-columns: 1fr;
-        gap: 20px;
-        padding: 20px 10px;
+        gap: 18px;
+        padding: 10px;
     }
 
     .projetos-card {
-        max-width: 320px;
+        max-width: 100%;
     }
 
     .btn {
         font-size: 12px;
+        padding: 9px;
     }
 }
