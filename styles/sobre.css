@@ -1,101 +1,136 @@
-#sobre span {
-  background: linear-gradient(
-    90deg,
-    #2563eb,
-    #1d4ed8,
-    #06b6d4
-);
-
--webkit-background-clip: text;
--webkit-text-fill-color: transparent;
-}
-
+/* =========================
+   SEÇÃO SOBRE
+========================= */
 #sobre {
     min-height: 100vh;
-    padding-top: 200px;
-}
-
- #sobre h1 {
-    font-size: 50px;
- }
-
-.scroll-down img{
-    width: 50px;
-    height: 50px;
-}
-
-.scroll-down img{
-    width: 45px;
-    animation: scrollHint 2s infinite;
-}
-
-@keyframes scrollHint{
-    0%, 100%{
-        transform: translateY(0);
-        opacity: 1;
-    }
-
-    50%{
-        transform: translateY(12px);
-        opacity: .6;
-    }
-}
-
-#sobre p {
-
-    font-size: 18px;
-
+    padding-top: 120px;
+    padding-left: 20px;
+    padding-right: 20px;
     text-align: center;
-
-    max-width: 700px;
-
-    margin: 0 auto;
 }
 
-
-
-.card h3 {
-    color: rgba(128, 128, 128, 0.445);
-    font-size: 20px;
+/* TÍTULO */
+#sobre h1 {
+    font-size: 50px;
+    margin-bottom: 20px;
 }
 
-.sobre-cards{
-    display: flex;
-
-    justify-content: center;
-
-    gap: 70px;
-
-    margin-top: 60px;
-
-    flex-wrap: wrap;
-}
-
-.card{
-width: 300px;
-
-padding: 30px;
-
-border-radius: 20px;
-
-text-align: center;
-
-transition: 0.3s;
-
-border: 1px solid transparent;
-
-background:
-    linear-gradient(#111827, #111827) padding-box,
-    linear-gradient(
+/* GRADIENTE NO SPAN */
+#sobre span {
+    background: linear-gradient(
         90deg,
         #2563eb,
         #1d4ed8,
         #06b6d4
-    ) border-box;
+    );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
-.card img{
-    width: 45px;
+/* TEXTO */
+#sobre p {
+    font-size: 18px;
+    text-align: center;
+    max-width: 700px;
+    margin: 0 auto;
+    color: #94a3b8;
+    line-height: 1.6;
+}
 
+/* =========================
+   SCROLL DOWN
+========================= */
+.scroll-down img {
+    width: 45px;
+    animation: scrollHint 2s infinite;
+    margin-top: 20px;
+}
+
+@keyframes scrollHint {
+    0%, 100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+
+    50% {
+        transform: translateY(12px);
+        opacity: 0.6;
+    }
+}
+
+/* =========================
+   CARDS
+========================= */
+.sobre-cards {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    margin-top: 60px;
+    flex-wrap: wrap;
+}
+
+/* CARD */
+.card {
+    width: 100%;
+    max-width: 300px;
+
+    padding: 30px;
+    border-radius: 20px;
+    text-align: center;
+
+    transition: 0.3s;
+
+    border: 1px solid transparent;
+
+    background:
+        linear-gradient(#111827, #111827) padding-box,
+        linear-gradient(
+            90deg,
+            #2563eb,
+            #1d4ed8,
+            #06b6d4
+        ) border-box;
+}
+
+/* ÍCONE */
+.card img {
+    width: 45px;
     margin-bottom: 20px;
+}
+
+/* TÍTULO CARD */
+.card h3 {
+    color: rgba(255, 255, 255, 0.85);
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+/* =========================
+   RESPONSIVO
+========================= */
+@media (max-width: 768px) {
+
+    #sobre {
+        padding-top: 80px;
+    }
+
+    #sobre h1 {
+        font-size: 32px;
+    }
+
+    #sobre p {
+        font-size: 14px;
+        padding: 0 10px;
+    }
+
+    .sobre-cards {
+        gap: 20px;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card {
+        width: 100%;
+        max-width: 320px;
+    }
 }

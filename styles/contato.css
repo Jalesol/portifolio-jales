@@ -1,7 +1,6 @@
-/* ===================================
+/* =========================
    SEÇÃO CONTATO
-=================================== */
-
+========================= */
 #contato {
     margin-top: 80px;
     padding: 40px 20px;
@@ -23,12 +22,12 @@
     font-size: 20px;
     color: #9ca3af;
     margin-bottom: 60px;
+    padding: 0 10px;
 }
 
-/* ===================================
-   CONTAINER
-=================================== */
-
+/* =========================
+   LAYOUT PRINCIPAL
+========================= */
 .contato-conteudo {
     max-width: 1200px;
     margin: 0 auto;
@@ -41,10 +40,9 @@
     align-items: start;
 }
 
-/* ===================================
-   LADO ESQUERDO
-=================================== */
-
+/* =========================
+   INFO
+========================= */
 .contato-info h3 {
     font-size: 36px;
     margin-bottom: 15px;
@@ -63,6 +61,7 @@
     gap: 20px;
 }
 
+/* ITEM */
 .contato-item {
     display: flex;
     align-items: center;
@@ -70,12 +69,11 @@
 
     background: #0b1220;
     border: 1px solid #1f2937;
-
     border-radius: 16px;
 
     padding: 22px;
 
-    transition: .3s;
+    transition: 0.3s;
 }
 
 .contato-item:hover {
@@ -83,6 +81,7 @@
     border-color: #3b82f6;
 }
 
+/* ÍCONE */
 .icon {
     width: 50px;
     height: 50px;
@@ -93,11 +92,7 @@
 
     border-radius: 12px;
 
-    background: linear-gradient(
-        90deg,
-        #3b82f6,
-        #8b5cf6
-    );
+    background: linear-gradient(90deg, #3b82f6, #8b5cf6);
 
     font-size: 22px;
 }
@@ -112,17 +107,13 @@
     font-size: 15px;
 }
 
-/* ===================================
+/* =========================
    FORMULÁRIO
-=================================== */
-
+========================= */
 .contato-form-coluna {
     background: #0b1220;
-
     border: 1px solid #1f2937;
-
     border-radius: 16px;
-
     padding: 35px;
 }
 
@@ -135,19 +126,12 @@
 .contato-form-coluna input,
 .contato-form-coluna textarea {
     width: 100%;
-
     background: #111827;
-
     border: 1px solid #334155;
-
     border-radius: 10px;
-
     color: white;
-
     font-size: 16px;
-
     padding: 15px;
-
     box-sizing: border-box;
 }
 
@@ -156,7 +140,7 @@
 }
 
 .contato-form-coluna textarea {
-    min-height: 220px;
+    min-height: 200px;
     resize: vertical;
 }
 
@@ -166,57 +150,69 @@
     border-color: #3b82f6;
 }
 
-/* ===================================
-   BOTÃO
-=================================== */
-
+/* BOTÃO */
 .btn-enviar {
     height: 55px;
-
     border: none;
-
     border-radius: 10px;
 
-    background: linear-gradient(
-        90deg,
-        #3b82f6,
-        #8b5cf6
-    );
-
+    background: linear-gradient(90deg, #3b82f6, #8b5cf6);
     color: white;
 
     font-size: 16px;
-
     font-weight: 600;
 
     cursor: pointer;
-
-    transition: .3s;
+    transition: 0.3s;
 }
 
 .btn-enviar:hover {
     transform: translateY(-2px);
 }
 
-/* ===================================
-   RESPONSIVO
-=================================== */
-
+/* =========================
+   RESPONSIVO MOBILE
+========================= */
 @media (max-width: 900px) {
 
     .contato-principal {
         grid-template-columns: 1fr;
+        gap: 30px;
     }
 
     #contato h1 {
-        font-size: 40px;
+        font-size: 32px;
+    }
+
+    #contato > p {
+        font-size: 14px;
     }
 
     .contato-info h3 {
+        font-size: 24px;
         text-align: center;
     }
 
     .contato-info > p {
+        font-size: 14px;
         text-align: center;
+    }
+
+    .contato-item {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .icon {
+        width: 45px;
+        height: 45px;
+    }
+
+    .contato-form-coluna {
+        padding: 20px;
+    }
+
+    .btn-enviar {
+        font-size: 14px;
     }
 }
